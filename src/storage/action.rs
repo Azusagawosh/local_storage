@@ -13,3 +13,10 @@ pub fn create(my_map: &mut HashMap<String, String>) {
     my_map.insert(key.trim().to_string(), value.trim().to_string());
     println!("Добавлено: {} -> {}", key.trim().to_string(), value.trim().to_string());
 }
+
+pub fn delete(my_map: &mut HashMap<String, String>) {
+    println!("Выберите действие 0 удалить ключ");
+    let del = 0;
+    io::stdin().read_line(&del).expect("Err");
+    my_map.remove()
+}
